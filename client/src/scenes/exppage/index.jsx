@@ -15,7 +15,7 @@ const ExpPage = () => {
 
   const getPost = async () => {
     const response = await fetch(
-      `http://localhost:3001/posts/${postId}`,
+      `https://biy-blog.onrender.com/posts/${postId}`,
       {
         method: "GET",
       }

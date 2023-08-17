@@ -133,7 +133,7 @@ const MyPostWidget = ({ picturePath }) => {
     formData.append("instructions", JSON.stringify(instructions));
 
     try {
-      const response = await fetch(`http://localhost:3001/posts`, {
+      const response = await fetch(`https://biy-blog.onrender.com/posts`, {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
         body: formData,

@@ -20,7 +20,7 @@ const AdvertWidget = () => {
         width="100%"
         height="auto"
         alt="advert"
-        src="http://localhost:3001/assets/exp.jpg"
+        src="https://biy-blog.onrender.com/assets/exp.jpg"
         style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
       />
       <Typography color={medium} m="0.5rem 0">

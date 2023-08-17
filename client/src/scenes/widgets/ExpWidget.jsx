@@ -25,7 +25,7 @@ import {BsFillFileBarGraphFill} from 'react-icons/bs'
     const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
   
     const plusClap = async () => {
-      const response = await fetch(`http://localhost:3001/posts/${postId}/clap`, {
+      const response = await fetch(`https://biy-blog.onrender.com/posts/${postId}/clap`, {
         method: "PUT",
       });
       const updatedPost = await response.json();
@@ -33,7 +33,7 @@ import {BsFillFileBarGraphFill} from 'react-icons/bs'
     };
   
     const plusView = async () => {
-      const response = await fetch(`http://localhost:3001/posts/${postId}/view`, {
+      const response = await fetch(`https://biy-blog.onrender.com/posts/${postId}/view`, {
         method: "PUT",
       });
       const updatedPost = await response.json();
@@ -44,7 +44,7 @@ import {BsFillFileBarGraphFill} from 'react-icons/bs'
       <WidgetWrapper m="2rem auto" width={isNonMobileScreens ? "80%" : '100%'}>
         <Box sx={{display:'flex', gap:'3rem'}}>
             <Box sx={{flexBasis:'20%'}}>
-                <img src={`http://localhost:3001/assets/${picturePath}`} alt="Title Image" width={"100%"} height="auto" style={{borderRadius:'6px'}}/>
+                <img src={`https://biy-blog.onrender.com/assets/${picturePath}`} alt="Title Image" width={"100%"} height="auto" style={{borderRadius:'6px'}}/>
             </Box>
             <Box sx={{textAlign:'left', flexBasis:'70%'}}>
                 <h1>{expName}</h1>

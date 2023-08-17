@@ -10,7 +10,7 @@ const     PostsWidget = ({ isProfile = false }) => {
   const token = useSelector((state) => state.token);
 
   const getFeedPosts = async () => {
-    const response = await fetch("http://localhost:3001/posts/", {
+    const response = await fetch("https://biy-blog.onrender.com/posts/", {
       method: "GET",
     });
     const data = await response.json();
@@ -19,7 +19,7 @@ const     PostsWidget = ({ isProfile = false }) => {
 
   const getUserPosts = async () => {
     const response = await fetch(
-      `http://localhost:3001/posts/${user._id}/posts`,
+      `https://biy-blog.onrender.com/posts/${user._id}/posts`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
